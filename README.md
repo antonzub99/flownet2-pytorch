@@ -37,6 +37,22 @@ L1 and L2 losses with multi-scale support are available in [losses.py](./losses.
 
 ## Installation 
 
+    # for Colab env
+    pip install torch==1.0.0 torchvision==0.2.2 -f https://download.pytorch.org/whl/cu90/torch_stable.html
+    pip install pypng
+    pip install tensorboardx
+    pip install  setproctitle colorama scipy==1.1.0
+    
+    # also run next python code
+    import os
+    !git clone https://github.com/Gauravv97/flownet2-pytorch.git
+    !mv /content/flownet2-pytorch /content/flownet2pytorch
+    os.chdir('./flownet2pytorch')
+    !bash install.sh
+    os.sys.path.append('/root/.local/lib/python3.6/site-packages/resample2d_cuda-0.0.0-py3.6-linux-x86_64.egg')
+    os.sys.path.append('/root/.local/lib/python3.6/site-packages/correlation_cuda-0.0.0-py3.6-linux-x86_64.egg')
+    os.sys.path.append( '/root/.local/lib/python3.6/site-packages/channelnorm_cuda-0.0.0-py3.6-linux-x86_64.egg')
+
     # get flownet2-pytorch source
     git clone https://github.com/NVIDIA/flownet2-pytorch.git
     cd flownet2-pytorch
