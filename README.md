@@ -37,8 +37,7 @@ L1 and L2 losses with multi-scale support are available in [losses.py](./losses.
 
 ## Installation 
 
-    # for Colab env
-    pip install torch==1.0.0 torchvision==0.2.2 -f https://download.pytorch.org/whl/cu90/torch_stable.html
+    # for current Colab env (1.11.0+cu113)
     pip install pypng
     pip install tensorboardx
     pip install  setproctitle colorama scipy==1.1.0
